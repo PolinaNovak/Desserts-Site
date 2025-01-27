@@ -1,7 +1,7 @@
 import { CartButton } from "./cart-button/cart-button";
 import { CartOrderTotal } from "./cart-order-total/cart-order-total";
 import { CartsList } from "../carts-list/carts-list";
-import { CarbonNeutralIcon } from "../icons";
+import { CarbonNeutralIcon } from "../icons/carbon-neutral/carbon-neutral";
 import styles from "./cart.module.scss";
 import { ModalMain } from "../modal-main/modal-window";
 import { ModalStates } from "../modal-main/modal-window";
