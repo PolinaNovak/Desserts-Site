@@ -1,0 +1,9 @@
+.root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: clamp(1em, 4vw, 1.3em);
+  white-space: nowrap;
+}

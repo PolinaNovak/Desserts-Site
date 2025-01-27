@@ -1,0 +1,54 @@
+@mixin base-css($align: center, $justify: center) {
+  width: 100vw;
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+.root {
+  @include base-css(flex-start, space-between);
+  height: 100vh;
+  position: relative;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.modalWindow {
+  @include base-css;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.body {
+  @include base-css(flex-start, space-between);
+  padding: 50px 10%;
+  box-sizing: border-box;
+  gap: 25px;
+}
+
+.itemsList {
+  width: 65%;
+  order: -1;
+  background-color: #4a2714;
+}
+
+.shoppingCart {
+  width: 35%;
+  background-color: #4a2714;
+}
+
+@media (max-width: 845px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .itemsList {
+    order: 1;
+  }
+
+  .itemsList,
+  .shoppingCart {
+    width: 100%;
+  }
+}

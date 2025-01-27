@@ -1,0 +1,58 @@
+@import-normalize;
+
+@font-face {
+  font-family: "RedHatText-Bold";
+  src: url("./RedHatText-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RedHatText-Regular";
+  src: url("./RedHatText-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RedHatText-SemiBold";
+  src: url("./RedHatText-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+ul,
+h1,
+h2,
+h3,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-regular);
+  color: var(--brown-color);
+}
+
+button {
+  border: none;
+  box-shadow: 2px 2px 5px var(--brown-color);
+  cursor: pointer;
+  background-color: transparent;
+  transition-duration: 0.5s;
+}
+
+:root {
+  --font-bold: "RedHatText-Bold", sans-serif;
+  --font-regular: "RedHatText-Regular", sans-serif;
+  --font-semi-bold: "RedHatText-SemiBold", sans-serif;
+
+  --red-color: #a73302;
+  --brown-color: #5d2317;
+  --light-brown-color: #ae5833;
+
+  --gap: 10px;
+}

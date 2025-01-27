@@ -1,0 +1,85 @@
+@function getPadding($padding: 0) {
+  @return #{$padding + 15}px;
+}
+
+.root {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #f5efda;
+  padding: 10%;
+  gap: 25px;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: clamp(1.3em, 3vw, 1.7em);
+  font-weight: 900;
+}
+
+.list {
+  min-height: 200px;
+  width: 100%;
+  list-style: none;
+}
+
+.item {
+  width: 100%;
+  border-bottom: 1px solid #4a2714;
+}
+
+.totalOrder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: getPadding(15);
+  box-sizing: border-box;
+}
+
+.decription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--gap);
+  background-color: #f4c8a5;
+  padding: getPadding(10);
+  box-sizing: border-box;
+}
+
+.decription {
+  span {
+    font-weight: 600;
+  }
+
+  .text {
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .iconWrapper {
+    flex-shrink: 1;
+  }
+}
+
+.confirm {
+  font-family: var(--font-bold);
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  background-color: var(--red-color);
+  font-weight: 700;
+}

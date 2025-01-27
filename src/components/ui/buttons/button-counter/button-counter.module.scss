@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: var(--light-brown-color);
+  border-radius: 25px;
+  width: 80%;
+  gap: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.text {
+  font-family: var(--font-bold);
+  font-size: clamp(17px, 20px, 23px);
+}
+
+.root {
+  button {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    scale: 1.5 1.5;
+  }
+}
+
+.root:hover {
+  background-color: #eca962;
+  transition-duration: 0.5s;
+}

@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5vw, 1.6vw, 2.2vw);
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.root:hover {
+  background-color: #eca962;
+}

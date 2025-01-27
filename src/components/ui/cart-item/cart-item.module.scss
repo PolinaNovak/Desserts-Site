@@ -1,0 +1,20 @@
+@function getGap($gapDop: 0) {
+  @return #{$gapDop + 5}px;
+}
+.root {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: getGap(10);
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: getGap(5);
+}

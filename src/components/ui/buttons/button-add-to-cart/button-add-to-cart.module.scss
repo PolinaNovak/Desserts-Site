@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 25px;
+  width: 80%;
+  gap: 10px;
+  color: var(--red-color);
+}
+
+.text {
+  color: black;
+  white-space: nowrap;
+  font-family: var(--font-bold);
+  font-size: clamp(14px, 18px, 20px);
+}
+
+.root:hover {
+  background-color: #eca962;
+}
